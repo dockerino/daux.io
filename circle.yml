@@ -1,0 +1,12 @@
+machine:
+  services:
+    - docker
+dependencies:
+  override:
+    - docker build -t daux.io . :
+        pwd: "daux.io"
+test:
+  override:
+    - docker run -d -p 80:80 daux.io; sleep 10 :
+        pwd: "daux.io"
+    - curl -L -I http://127.0.0.1 | grep "200 OK"
