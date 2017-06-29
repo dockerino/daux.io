@@ -13,6 +13,8 @@ docker run -d -p 80:80 iamwickd/daux.io
 You can now test the deployment:
 ````
 curl http://127.0.0.1:80
+// or
+curl http://localhost:80
 ````
 
 
