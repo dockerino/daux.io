@@ -7,12 +7,12 @@ This Dockerfile will download the latest version of daux.io and will deploy it o
 ## Usage
 ````
 docker pull iamwickd/daux.io
-docker run -d -p 72:72 iamwickd/daux.io
+docker run -d -p 80:80 iamwickd/daux.io
 ````
 
 You can now test the deployment:
 ````
-curl http://localhost:72
+curl http://localhost:80
 ````
 
 
