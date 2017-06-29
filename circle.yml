@@ -6,5 +6,5 @@ dependencies:
     - docker build -t daux.io .
 test:
   override:
-    - docker run -d -p 80:80 daux.io; sleep 10
-    - curl -L -I http://127.0.0.1 | grep "200 OK"
+    - docker run -d -p 72:72 daux.io; sleep 10
+    - curl -L -I http://127.0.0.1:72 | grep "200 OK"

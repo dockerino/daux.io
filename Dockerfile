@@ -1,7 +1,7 @@
 FROM tutum/apache-php
 MAINTAINER Jason Rust <jasonrust89@gmail.com>
 
-EXPOSE 72
+EXPOSE 32
 
 # Download the daux.io archive on github
 ADD http://github.com/justinwalsh/daux.io/archive/master.tar.gz /var/www/html/
